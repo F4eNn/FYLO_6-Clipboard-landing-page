@@ -1,0 +1,312 @@
+/* Reset CSS */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+	margin: 0 auto;
+	text-align: center;
+}
+p {
+	color: var(--neutral-grayish-blue);
+	line-height: 30px;
+}
+
+/* Custom properties */
+:root {
+	--primary-strong-cyan: hsl(171, 66%, 44%);
+	--primary-light-blue: hsl(233, 100%, 69%);
+	--neutral-dark-brayish-blue: hsl(210, 10%, 33%);
+	--neutral-grayish-blue: hsl(201, 11%, 66%);
+	--body-fs: 18px;
+	--main-ff: 'Bai Jamjuree', sans-serif;
+	--fw-regular: 400;
+	--fw-bold: 600;
+}
+
+body {
+	font-size: var(--body-fs);
+	font-family: var(--main-ff);
+}
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+	text-align: center;
+}
+.header h1 {
+	font-size: 32px;
+	margin: 0 25px 20px 25px;
+}
+.logo {
+	font-size: 250px;
+}
+.bg-header {
+	background-image: url('./images/bg-header-mobile.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+
+.header p {
+	margin: 0 15px 40px 15px;
+}
+.header button, 
+.download-box button{
+	padding: 15px 80px 15px 80px;
+	margin-bottom: 25px;
+	border-radius: 50px;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+}
+.ios-btn {
+	background-color: var(--primary-strong-cyan);
+	margin-bottom: 20px;
+	box-shadow: 0px 3px 3px 2px #219d8a;
+}
+.mac-btn {
+	background-color: var(--primary-light-blue);
+	box-shadow: 0px 3px 3px 2px #5965c0;
+}
+
+.features {
+	text-align: center;
+	margin: 150px 15px 15px 15px;
+}
+.features p {
+	margin-bottom: 50px;
+}
+
+.features h2 {
+	margin-bottom: 30px;
+}
+.features h3 {
+	margin-bottom: 15px;
+}
+
+.computer {
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.second-features {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.second-features img {
+	width: 100%;
+	height: auto;
+}
+.second-features h2 {
+	width: 300px;
+	margin-bottom: 15px;
+	padding-top: 75px;
+}
+.second-features p {
+	width: 350px;
+	margin-bottom: 50px;
+}
+
+.icons {
+	height: 650px;
+	width: 350px;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.companies {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	margin: 50px auto;
+}
+.companies img {
+	margin-bottom: 75px;
+}
+.download-box{
+	text-align: center;
+}
+.download-box p {
+	width: 345px;
+	margin-bottom: 50px;
+}
+.download-box h2{
+	margin: 50px 0 25px 0;
+}
+.footer-container p{
+	color: var(--neutral-dark-brayish-blue);
+}
+.bg-footer{
+	background-color: var(--neutral-grayish-blue);
+}
+.footer-container {
+	text-align: center;
+	height: 150px;
+}
+.footer-container .logo{
+	margin: 25px 0 25px 0;
+	width: 15%;
+}
+.footer-container p{
+	margin-bottom: 20px;
+}
+.social-icons .twitter-icon{
+	margin: 0 35px 0 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	h2 {
+		font-size: 32px;
+	}
+	.bg-header {
+		background-image: url('./images/bg-header-desktop.png');
+	}
+	.header h1 {
+		font-size: 40px;
+	}
+
+	.download-box button,
+	.header button {
+		padding: 15px 40px 15px 40px;
+		font-size: 18px;
+	}
+	.ios-btn {
+		margin-right: 5px;
+	}
+	.mac-btn {
+		margin-left: 5px;
+	}
+	.box {
+		position: relative;
+		display: flex;
+	}
+	.computer {
+		position: relative;
+		width: 800px;
+		margin-left: -100px;
+	}
+	.header-p {
+		width: 700px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.text-box {
+		margin-top: 50px;
+		text-align: left;
+		margin-left: 100px;
+	}
+	.text-box p {
+		width: 450px;
+		
+	}
+	.second-features h2,
+	.second-features p {
+		width: 700px;
+		margin: 0 auto;
+		
+	}
+
+	.second-features img {
+		margin-top: 100px;
+		width: 65%;
+	}
+	.icons {
+		min-width: 1440px;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		height: 200px;
+	}
+	.icons p {
+		width: 390px;
+	}
+	.companies {
+		min-width: 1440px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.download-box{
+		text-align: center;
+	}
+	.download-box p{
+		width: 700px;
+		margin: 0 auto 50px auto;
+	}
+	footer{
+		margin-top: 100px;
+		
+	}
+	
+	.footer-container .logo{
+		width: 50%;
+		margin: 0;
+	}
+	.footer-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.footer-container p{
+		text-align: left;
+		line-height: 40px;
+		margin: 0;
+
+		
+	}
+	
+	.footer-container > p{
+		margin-top: -40px;
+	}
+	.footer-container .twitter-icon{
+		margin: 0 15px 0 15px;
+	}
+}
+/* 4eNn/FYLO_6-Clipboard-landing-page-master */
