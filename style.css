@@ -1,3 +1,5 @@
+
+
 /* Reset CSS */
 
 *,
@@ -170,6 +172,11 @@ body {
 .social-icons .twitter-icon {
 	margin: 0 35px 0 35px;
 }
+.attribution{
+	color:var(--neutral-dark-brayish-blue);
+	font-size: 12px;
+	text-align: center;
+	}
 
 @media (min-width: 768px) {
 	h2 {
@@ -220,7 +227,6 @@ body {
 		text-align: center;
 		margin: 0 auto;
 	}
-
 	.text-box {
 		margin-top: 50px;
 		text-align: left;
@@ -269,7 +275,6 @@ body {
 	footer {
 		margin-top: 100px;
 	}
-
 	.footer-container .logo {
 		width: 50%;
 		margin: 0;
@@ -290,7 +295,6 @@ body {
 		margin: 0;
 		transition: color .3s;
 	}
-
 	.footer-container > p {
 		margin-top: -40px;
 	}
@@ -306,10 +310,7 @@ body {
 		cursor: pointer;
 	}
 	.attribution{
-	color:var(--neutral-dark-brayish-blue);
-	font-size: 14px;
-	text-align: center;
-	
+	font-size: 16px;
+
 	}
-	
 }
