@@ -29,6 +29,7 @@ p {
 	--primary-light-blue: hsl(233, 100%, 69%);
 	--neutral-dark-brayish-blue: hsl(210, 10%, 33%);
 	--neutral-grayish-blue: hsl(201, 11%, 66%);
+	--bg-footer: #f5f6f8;
 	--body-fs: 18px;
 	--main-ff: 'Bai Jamjuree', sans-serif;
 	--fw-regular: 400;
@@ -156,7 +157,7 @@ body {
 	color: var(--neutral-dark-brayish-blue);
 }
 .bg-footer {
-	background-color: var(--neutral-grayish-blue);
+	background-color: var(--bg-footer);
 }
 .footer-container {
 	text-align: center;
@@ -247,7 +248,7 @@ body {
 	}
 	.icons {
 		min-width: 1440px;
-		margin-top: 50px;
+		margin-top: 100px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -261,6 +262,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		margin-top: 100px;
 	}
 	.download-box {
 		text-align: center;
@@ -311,6 +313,5 @@ body {
 	}
 	.attribution{
 	font-size: 16px;
-
 	}
 }
