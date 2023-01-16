@@ -62,8 +62,8 @@ body {
 .header p {
 	margin: 0 15px 40px 15px;
 }
-.header button, 
-.download-box button{
+.header button,
+.download-box button {
 	padding: 15px 80px 15px 80px;
 	margin-bottom: 25px;
 	border-radius: 50px;
@@ -140,64 +140,36 @@ body {
 .companies img {
 	margin-bottom: 75px;
 }
-.download-box{
+.download-box {
 	text-align: center;
 }
 .download-box p {
 	width: 345px;
 	margin-bottom: 50px;
 }
-.download-box h2{
+.download-box h2 {
 	margin: 50px 0 25px 0;
 }
-.footer-container p{
+.footer-container p {
 	color: var(--neutral-dark-brayish-blue);
 }
-.bg-footer{
+.bg-footer {
 	background-color: var(--neutral-grayish-blue);
 }
 .footer-container {
 	text-align: center;
-	height: 150px;
+	/* height: 150px; */
 }
-.footer-container .logo{
+.footer-container .logo {
 	margin: 25px 0 25px 0;
 	width: 15%;
 }
-.footer-container p{
+.footer-container p {
 	margin-bottom: 20px;
 }
-.social-icons .twitter-icon{
+.social-icons .twitter-icon {
 	margin: 0 35px 0 35px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
 	h2 {
@@ -209,17 +181,30 @@ body {
 	.header h1 {
 		font-size: 40px;
 	}
+	.text p {
+		text-align: center;
+	}
 
-	.download-box button,
-	.header button {
+	.header .ios-btn,
+	.header .mac-btn {
 		padding: 15px 40px 15px 40px;
-		font-size: 18px;
+	}
+
+	button:hover {
+		cursor: pointer;
+		transition: background-color 0.3s;
 	}
 	.ios-btn {
 		margin-right: 5px;
 	}
+	.ios-btn:hover {
+		background-color: #5dccbb;
+	}
 	.mac-btn {
 		margin-left: 5px;
+	}
+	.mac-btn:hover {
+		background-color: #8796ff;
 	}
 	.box {
 		position: relative;
@@ -243,13 +228,11 @@ body {
 	}
 	.text-box p {
 		width: 450px;
-		
 	}
 	.second-features h2,
 	.second-features p {
 		width: 700px;
 		margin: 0 auto;
-		
 	}
 
 	.second-features img {
@@ -273,19 +256,21 @@ body {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	.download-box{
+	.download-box {
 		text-align: center;
 	}
-	.download-box p{
+	.download-box button {
+		padding: 15px 40px 15px 40px;
+	}
+	.download-box p {
 		width: 700px;
 		margin: 0 auto 50px auto;
 	}
-	footer{
+	footer {
 		margin-top: 100px;
-		
 	}
-	
-	.footer-container .logo{
+
+	.footer-container .logo {
 		width: 50%;
 		margin: 0;
 	}
@@ -293,19 +278,38 @@ body {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		height: 150px;
 	}
-	.footer-container p{
+	.footer-container p:hover{
+		color: var(--primary-strong-cyan);
+		cursor: pointer;
+	}
+	.footer-container p {
 		text-align: left;
 		line-height: 40px;
 		margin: 0;
-
-		
+		transition: color .3s;
 	}
-	
-	.footer-container > p{
+
+	.footer-container > p {
 		margin-top: -40px;
 	}
-	.footer-container .twitter-icon{
+	.footer-container .twitter {
 		margin: 0 15px 0 15px;
 	}
+	svg{
+	 fill: #4C545C;
+	 transition: fill .3s;
+	}
+	svg:hover{
+		fill:var(--primary-strong-cyan);
+		cursor: pointer;
+	}
+	.attribution{
+	color:var(--neutral-dark-brayish-blue);
+	font-size: 14px;
+	text-align: center;
+	
+	}
+	
 }
